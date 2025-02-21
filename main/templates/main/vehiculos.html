@@ -1,0 +1,63 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}Inicio - Concesionaria{% endblock %}
+{% block content %}
+<div class="text-center my-5">
+    <h1 class="display-4">Vehículos</h1>
+    <p class="lead">Todas nuestras motos.</p>
+  </div>
+  
+<div class="container my-5">
+  {% for moto in motos %}
+  <div class="card mb-5 shadow-sm">
+    <!-- Encabezado: Modelo y Año -->
+    <div class="card-header text-center bg-secondary text-white">
+      <h2 class="mb-0">{{ moto.modelo }} ({{ moto.anio }})</h2>
+    </div>
+    <div class="card-body">
+      <!-- Fila de datos técnicos -->
+      <section class="py-3 border-bottom" id="encabezados-{{ forloop.counter }}">
+        <div class="row text-center">
+          <div class="col-md-3">
+            <h5 class="fw-bold">Motor</h5>
+            <p>{{ moto.motor }}</p>
+          </div>
+          <div class="col-md-3">
+            <h5 class="fw-bold">Velocidad Máxima</h5>
+            <p>{{ moto.velocidad }}</p>
+          </div>
+          <div class="col-md-3">
+            <h5 class="fw-bold">Manual</h5>
+            <p>{{ moto.manual }}</p>
+          </div>
+          <div class="col-md-3">
+            <h5 class="fw-bold">Pasajeros</h5>
+            <p>{{ moto.pasajeros }}</p>
+          </div>
+        </div>
+      </section>
+      <!-- Detalle: Imagen y Descripción -->
+      <section class="py-3" id="detalles-{{ forloop.counter }}">
+        <div class="row align-items-center">
+          <div class="col-md-5">
+            {% if moto.imagen %}
+              <img src="{{ moto.imagen.url }}" alt="{{ moto.modelo }}" class="img-fluid rounded">
+            {% else %}
+              <img src="{% static 'main/images/placeholder.png' %}" alt="Sin imagen" class="img-fluid rounded">
+            {% endif %}
+          </div>
+          <div class="col-md-7">
+            <h4 class="mb-3">Descripción</h4>
+            <p>{{ moto.descripcion }}</p>
+            <h4 class="mb-3">Precio</h4>
+            <h5>{{ moto.precio }} Quetzales</h5>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  {% empty %}
+    <p class="text-center">No hay motos disponibles en este momento.</p>
+  {% endfor %}
+</div>
+{% endblock %}
