@@ -1,6 +1,103 @@
 {% extends 'main/base.html' %}
-{% block title %}Inicio - Concesionaria{% endblock %}
+
+{% block title %}
+Empresa - Concesionaria
+{% endblock %}
+
 {% block content %}
-    <h1>Empresa</h1>
-    <p>Bienvenidos a Piaggio GT.</p>
+<section class="single-page-header" style="background-image: url('https://piaggiomx.com/images/cabeceras/c935ddfe3ff4748fa5593a4b756a8a95.webp')">
+    <div class="container text-center py-5">
+        <h1 class="display-4 text-white">Empresa</h1>
+        <p class="lead text-white">Conoce nuestra historia, misión, visión y valores como empresa.</p>
+    </div>
+</section>
+
+<!-- Historia -->
+<section class="section" id="historia">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-primary mb-4">Historia</h2>
+                <p>Fundada por <strong>Rinaldo Piaggio</strong> en 1884, Piaggio & C inicialmente fabricaba locomotoras y vagones de tren, posteriormente en la Primera y Segunda Guerra Mundial la compañía se centró en la fabricación de aviones.
+
+                    Al final de la guerra, Enrico Piaggio, hijo del fundador, decidió abandonar el sector aeronáutico con el fin de afrontar la urgente necesidad italiana de un medio de transporte moderno y económico.
+                    
+                    La idea era diseñar un vehículo barato para las masas.
+                    
+                    Después del lanzamiento exitoso de la Vespa scooter en 1946, el ingeniero aeronáutico Corradino D’Ascanio, fue elegido para diseñar un vehículo para colmar una laguna en el sector de los utilitarios de la posguerra, un motocarro de pequeña cilindrada, con un consumo de combustible bajo y un precio accesible de compra y mantenimiento, fácil de conducir, maniobrar en el tráfico más intenso de la ciudad, con la fuerza para transportar productos en el campo. De esta forma nace en 1948 la gama de vehículos comerciales Ape.
+                    
+                    Con una historia de más de 70 años, Ape ha ido evolucionando con el paso del tiempo conservando su propia e inconfundible personalidad, sin perder de vista sus orígenes, superando los beneficios funcionales típicos del producto para convertirse en un ícono de las costumbres y la cultura italiana.
+                    
+                    Ape no tiene rivales en cuanto a tamaño, maniobrabilidad, economicidad y robustez. La gama, amplia y variada, incluye modelos capaces de satisfacer diversas necesidades profesionales, así como el ocio de los clientes que buscan un vehículo personal y diferente para moverse.
+                    
+                    Los vehículos de carga son ya un clásico de la cultura italiana. Sin embargo, el éxito Ape supera ampliamente los confines del viejo continente, y hoy es un auténtico éxito mundial. En Latinoamérica como en otras partes del mundo, el Ape ha sido utilizado para satisfacer las necesidades de transporte de mercancías y pasajeros.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://piaggiomx.com/images/historia/d88b18e093d81de20b09bf5fad802a4c.webp" alt="Historia de la empresa" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quiénes somos -->
+<section class="section" id="quienes-somos">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h2 class="text-primary mb-4">Quiénes somos</h2>
+                <p>Moto Galería es una empresa fundada el 11 de Agosto de 2006 por un grupo familiar de Chiapas dedicada a la comercialización de moto carros. En el año 2019 se crean lazos con la marca Piaggio y a raíz de esta unión Moto Galería se convierte en importadora y exportadora de moto carros de pasajeros, pick ups (vehículos de carga) y refacciones. Desde entonces Moto Galería en conjunto con Piaggio se ha expandido a lugares como Colombia, Guatemala, Perú y Estados Unidos.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Misión y Visión -->
+<section class="section" id="mision">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-primary">Misión</h2>
+                <p class="lead">Ser una empresa que brinde mejores oportunidades de empleo, autoempleo o de negocio a las personas, a través de nuestros mototaxis con el mejor servicio postventa y refacciones.</p>
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-primary">Visión</h2>
+                <p class="lead">Ser parte de la historia de éxito de las familias a nivel nacional y ser vista como una marca que ofrece la mejor opción para tener ingresos para sí mismo.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Valores -->
+<section class="section" id="valores">
+    <div class="container py-5">
+        <h2 class="text-center text-primary mb-5">Nuestros Valores</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="https://piaggiomx.com/images/valores/d9e03b64926cf2df14781f0e8ebb714c.webp" alt="Compromiso" class="img-fluid mb-2">
+                <h4>Compromiso</h4>
+                <p>Estamos seguros de que nuestras colaboraciones se basan en la responsabilidad mutua.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="https://piaggiomx.com/images/valores/d9a056228a18d9b2b514f4c9ff04a503.webp" alt="Honestidad" class="img-fluid mb-2">
+                <h4>Honestidad</h4>
+                <p>Fomentamos la armonía y confianza con nuestras prácticas comerciales.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="https://piaggiomx.com/images/valores/d2401e6f47b84b840a6df67ead8ecc19.webp" alt="Pasión" class="img-fluid mb-2">
+                <h4>Pasión</h4>
+                <p>Nos dedicamos a mejorar la calidad de vida de las personas con nuestra oferta.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="https://piaggiomx.com/images/valores/37127e448bfef5eef0d2f5679318580e.webp" alt="Solidaridad" class="img-fluid mb-2">
+                <h4>Solidaridad</h4>
+                <p>Un sentimiento de apoyo especialmente cuando haya una situación de vulnerabilidad.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="https://piaggiomx.com/images/valores/3bff2595b3a1ae986a7d58d9cb234de3.webp" alt="Competitividad" class="img-fluid mb-2">
+                <h4>Competitividad</h4>
+                <p>Siempre buscamos estar a la vanguardia, buscamos los mejores estándares de calidad, para ofrecer un buen servicio.</p>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}
