@@ -1,0 +1,81 @@
+/* contacto.css - Estilos exclusivos para la página de Contacto Corporativo */
+
+/* Encabezado de la página de contacto */
+.contacto-header {
+    background: linear-gradient(135deg, #0564a4, #1d4f73);
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .contacto-header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .contacto-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  /* Información de contacto */
+  .contacto-info {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+  }
+  
+  .contacto-info h3 {
+    color: #0564a4;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+  }
+  
+  .contacto-info p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  /* Formulario de contacto */
+  .contacto-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  .contacto-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .contacto-form .form-control {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+  }
+  
+  .contacto-form button {
+    background-color: #0564a4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contacto-form button:hover {
+    background-color: #034f7a;
+  }
+  
+  body {
+    background-image: url('/static/main/images/Fondo.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
