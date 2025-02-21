@@ -84,7 +84,11 @@
     .bd-mode-toggle .dropdown-menu .active .bi {
       display: block !important;
     }
+    body {
+    padding-top: 70px; /* Ajustar este valor según la altura del navbar (Para que no se coma una parte del body) */
+  }
   </style>
+
 
   <!-- Custom styles for this template -->
   <link href="{% static 'main/css/carousel.css' %}" rel="stylesheet">
@@ -111,12 +115,13 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="{% url 'inicio' %}">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="{% url 'empresa' %}">Empresa</a></li>
-        <li class="nav-item"><a class="nav-link" href="{% url 'vehiculos' %}">Vehículos</a></li>
-        <li class="nav-item"><a class="nav-link" href="{% url 'servicios' %}">Servicios</a></li>
-        <li class="nav-item"><a class="nav-link" href="{% url 'contacto' %}">Contacto</a></li>
-      </ul>
+  <li class="nav-item me-5"><a class="nav-link" href="{% url 'inicio' %}">Inicio</a></li>
+  <li class="nav-item me-5"><a class="nav-link" href="{% url 'empresa' %}">Empresa</a></li>
+  <li class="nav-item me-5"><a class="nav-link" href="{% url 'vehiculos' %}">Vehículos</a></li>
+  <li class="nav-item me-5"><a class="nav-link" href="{% url 'servicios' %}">Servicios</a></li>
+  <li class="nav-item"><a class="nav-link" href="{% url 'contacto' %}">Contacto</a></li>
+</ul>
+
     </div>
   </nav>
 </header>

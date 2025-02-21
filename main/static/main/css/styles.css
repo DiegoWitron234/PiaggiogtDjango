@@ -6,6 +6,12 @@
     --negro: #000000;
 }
 
+/* Separación entre los botones del navbar (no funciona) */
+.navbar-nav .nav-item {
+  margin-right: 4.5rem; /* Ajustar el valor */
+}
+
+
 
 /* Pie de página */
 footer.bg-light {
