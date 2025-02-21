@@ -64,6 +64,7 @@
     }
     .btn-bd-primary {
       --bd-violet-bg: #712cf9;
+        --bs-white: #FFFFFF;
       --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
       --bs-btn-font-weight: 600;
       --bs-btn-color: var(--bs-white);
@@ -123,6 +124,17 @@
   <main>
     {% block content %}{% endblock %}
   </main>
+
+  {% if messages %}
+  <div class="container mt-3">
+    {% for message in messages %}
+      <div class="alert alert-{{ message.tags }}">
+        {{ message }}
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
+
   
   <!-- Footer -->
   <footer class="py-4 bg-light border-top">
