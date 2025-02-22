@@ -88,7 +88,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'piaggiogt', # Nombre de la base de datos
         'USER': 'root',      # Usuario de MySQL
-        'PASSWORD': 'amolavida',  # Contraseña de MySQL
+        'PASSWORD': 'root',  # Contraseña de MySQL
         'HOST': 'localhost',  # O la dirección IP del servidor MySQL
         'PORT': '3306',       # Puerto por defecto de MySQL
     }
