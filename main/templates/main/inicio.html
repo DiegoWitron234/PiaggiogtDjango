@@ -33,7 +33,7 @@
             -->
           </div>
           <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+           <img src="{% static 'main/images/banner3.webp' %}" class="d-block w-100" alt="Modelo 1">
             <!--
               <div class="container">
               <div class="carousel-caption text-end">
@@ -61,28 +61,27 @@
   <!-- Wrap the rest of the page in another container to center all the content. -->
 
   <div class="container marketing">
-
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
+<div class="row">
+  <div class="col-lg-4 text-center mb-4">
+ <img src="{% static 'main/images/moto1.webp' %}" class="img-fluid hover-lift img-small" alt="Modelo 1">
+    <h2 class="fw-normal mt-3">hola</h2>
+    <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+  </div><!-- /.col-lg-4 -->
+  <div class="col-lg-4 text-center mb-4">
+       <img src="{% static 'main/images/moto3.webp' %}" class="d-block w-100" alt="Modelo 1">
+    <h2 class="fw-normal mt-3">Hola2</h2>
+    <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+  </div><!-- /.col-lg-4 -->
+  <div class="col-lg-4 text-center mb-4">
+    <img src="{% static 'main/images/moto4.webp' %}" class="d-block w-100" alt="Modelo 1">
+      <title>Placeholder</title>
+    <h2 class="fw-normal mt-3">Hola3</h2>
+    <p>And lastly this, the third column of representative placeholder content.</p>
+    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+  </div><!-- /.col-lg-4 -->
+</div><!-- /.row -->
 
 
     <!-- START THE FEATURETTES -->
@@ -128,5 +127,8 @@
     <!-- /END THE FEATURETTES -->
 
   </div><!-- /.container -->
+
+<script src="{% static 'main/js/inicio.js' %}"></script>
+<link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
     
 {% endblock %}
