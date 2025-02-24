@@ -6,12 +6,6 @@
     --negro: #000000;
 }
 
-/* Separación entre los botones del navbar (no funciona) */
-.navbar-nav .nav-item {
-  margin-right: 4.5rem; /* Ajustar el valor */
-}
-
-
 
 /* Pie de página */
 footer.bg-light {
@@ -50,14 +44,6 @@ footer.bg-light {
 }
 
 
-/* Colores corporativos */
-:root {
-  --color-principal: #5fa0d7; /* Color para la barra y el subrayado */
-  --blanco: #ffffff;
-  --gris-oscuro: #333333;
-  --negro: #000000;
-}
-
 /* Separación entre los botones del navbar */
 .navbar-nav .nav-item {
   margin-right: 4.5rem; /* Ajusta este valor según lo necesites */
@@ -89,4 +75,9 @@ footer.bg-light {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--color-principal);
+}
+
+/* Ajuste de tipografía para una apariencia más moderna */
+body, p, h1, h2, h3, h4 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
