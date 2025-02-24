@@ -48,3 +48,45 @@ footer.bg-light {
   height: 50px;
   background: linear-gradient(transparent, #fff);
 }
+
+
+/* Colores corporativos */
+:root {
+  --color-principal: #5fa0d7; /* Color para la barra y el subrayado */
+  --blanco: #ffffff;
+  --gris-oscuro: #333333;
+  --negro: #000000;
+}
+
+/* Separación entre los botones del navbar */
+.navbar-nav .nav-item {
+  margin-right: 4.5rem; /* Ajusta este valor según lo necesites */
+}
+
+/* Animación de subrayado en los links del navbar */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Ajusta según necesites */
+  width: 0;
+  height: 2px;
+  background: var(--color-principal); /* Usa tu color corporativo */
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Opcional: animación de color en el link */
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-principal);
+}
