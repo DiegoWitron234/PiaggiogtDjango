@@ -1,22 +1,28 @@
 {% extends 'main/base.html' %}
 {% load static %}
-{% block title %}Inicio - Concesionaria{% endblock %}
+{% block title %}Vehículos - Piaggio GT{% endblock %}
+{% block extra_head %}
+  <!-- Estilos exclusivos para la página de Vehículos (opcional) -->
+  <link rel="stylesheet" href="{% static 'main/css/vehiculos.css' %}">
+  <!-- AOS CSS para animaciones -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+{% endblock %}
 {% block content %}
-<div class="text-center my-5">
+<div class="text-center my-5" data-aos="fade-in">
     <h1 class="display-4">Vehículos</h1>
     <p class="lead">Todas nuestras motos.</p>
-  </div>
-  
+</div>
+
 <div class="container my-5">
   {% for moto in motos %}
-  <div class="card mb-5 shadow-sm">
+  <div class="card mb-5 shadow-sm" data-aos="fade-up">
     <!-- Encabezado: Modelo y Año -->
     <div class="card-header text-center bg-secondary text-white">
       <h2 class="mb-0">{{ moto.modelo }} ({{ moto.anio }})</h2>
     </div>
     <div class="card-body">
       <!-- Fila de datos técnicos -->
-      <section class="py-3 border-bottom" id="encabezados-{{ forloop.counter }}">
+      <section class="py-3 border-bottom" id="encabezados-{{ forloop.counter }}" data-aos="fade-right">
         <div class="row text-center">
           <div class="col-md-3">
             <h5 class="fw-bold">Motor</h5>
@@ -37,13 +43,13 @@
         </div>
       </section>
       <!-- Detalle: Imagen y Descripción -->
-      <section class="py-3" id="detalles-{{ forloop.counter }}">
+      <section class="py-3" id="detalles-{{ forloop.counter }}" data-aos="fade-left">
         <div class="row align-items-center">
           <div class="col-md-5">
             {% if moto.imagen %}
-              <img src="{{ moto.imagen.url }}" alt="{{ moto.modelo }}" class="img-fluid rounded">
+              <img src="{{ moto.imagen.url }}" alt="{{ moto.modelo }}" class="img-fluid rounded hover-lift">
             {% else %}
-              <img src="{% static 'main/images/placeholder.png' %}" alt="Sin imagen" class="img-fluid rounded">
+              <img src="{% static 'main/images/placeholder.png' %}" alt="Sin imagen" class="img-fluid rounded hover-lift">
             {% endif %}
           </div>
           <div class="col-md-7">
@@ -60,4 +66,14 @@
     <p class="text-center">No hay motos disponibles en este momento.</p>
   {% endfor %}
 </div>
+
+    <!-- AOS JS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800, // Duración de la animación en ms
+    once: true     // Solo anima una vez
+  });
+</script>
+
 {% endblock %}
